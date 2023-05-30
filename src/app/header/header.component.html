@@ -1,0 +1,24 @@
+<div class="hero">
+  <nav class="nav">
+    <h1><a routerLink="/">Exam-portal</a></h1>
+    <div [ngSwitch]="menuType">
+        <ul *ngSwitchCase="'default'">
+            <li><a routerLink="/">Home</a></li>
+            <!-- <li><a routerLink="/register">Register</a></li> -->
+            <li><a routerLink="/user-auth">Login</a></li>
+            <li><a routerLink="/admin">Admin</a></li>
+        </ul>
+
+        <ul *ngSwitchCase="'admin'">
+            <li><a routerLink="admin-add-quiz">Add Quiz</a></li>
+            <li><a (click)="logout()">Logout</a></li>
+            <li><a routerLink="/login">{{adminName}} </a></li>
+            <!-- <li><a routerLink="/admin">{{adminName | titlecase}} </a></li> -->
+        </ul>
+
+
+    </div>
+
+</nav>
+</div>
+

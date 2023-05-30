@@ -1,0 +1,129 @@
+{
+  "admin": [
+    {
+      "name": "test",
+      "email": "test@gmail.com",
+      "password": "test",
+      "id": 1
+    },
+    {
+      "name": "test1",
+      "password": "etst1",
+      "email": "test1@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "test2",
+      "password": "test2",
+      "email": "test2@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "test2",
+      "password": "test2",
+      "email": "test2@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 5
+    },
+    {
+      "name": "test3",
+      "password": "test3",
+      "email": "test3@gmail.com",
+      "id": 6
+    },
+    {
+      "name": "test",
+      "password": "test",
+      "email": "test@gmail.com",
+      "id": 7
+    },
+    {
+      "name": "test",
+      "password": "test",
+      "email": "test@gmail.com",
+      "id": 8
+    },
+    {
+      "name": "test",
+      "password": "test",
+      "email": "test@gmail.com",
+      "id": 9
+    },
+    {
+      "name": "test",
+      "password": "test",
+      "email": "test@gmail.com",
+      "id": 10
+    },
+    {
+      "id": 11
+    }
+  ],
+  "quiz": [
+    {
+      "questions": "Is angular best for web dev?",
+      "category": "Computer Science",
+      "optionc": "It depends",
+      "option1": "No it is not!?",
+      "option2": "Yes for sure!!",
+      "id": 1
+    },
+    {
+      "questions": "Is Angular easy?",
+      "optionc": "It depends",
+      "option1": "Yes",
+      "option2": "No",
+      "id": 4
+    },
+    {
+      "questions": "Is physics easy?",
+      "category": "Physics",
+      "optionc": "It depends",
+      "option1": "Yes",
+      "option2": "No",
+      "id": 6
+    },
+    {
+      "questions": "what shape is the earth",
+      "category": "Physics",
+      "optionc": "Spherical",
+      "option1": "Flat",
+      "option2": "Donut",
+      "id": 7
+    },
+    {
+      "questions": "What is the value of pi?",
+      "category": "Mathematics",
+      "optionc": "3.14",
+      "option1": "5.96",
+      "option2": "5.97",
+      "id": 8
+    },
+    {
+      "questions": "what shape is the earth",
+      "category": "Computer Science",
+      "optionc": "Spherical",
+      "option1": "Flat",
+      "option2": "Donut",
+      "id": 11
+    },
+    {
+      "questions": "what is the formula of water?",
+      "category": "Chemistry",
+      "optionc": "H2O",
+      "option1": "O2",
+      "option2": "H2",
+      "id": 12
+    }
+  ],
+  "user": {
+    "name": "test",
+    "email": "test@gmail.com",
+    "password": "test"
+  }
+}

@@ -1,0 +1,43 @@
+<div class="add-quiz">
+    <h1>Add Quiz</h1>
+    <form #addQuiz="ngForm" class="common-form" (ngSubmit)="submit(addQuiz.value)">
+        <input
+        type="text"
+        class="form-input"
+        placeholder="Enter Questions"
+        ngModel name="questions"
+        />
+        <!-- <input
+        type="text"
+        class="form-input"
+        placeholder="Enter Category"
+        ngModel name="category"
+        /> -->
+        <label for="category">Choose subject</label>
+        <select name="category" id="category" ngModel name="category">
+            <option value="Computer Science">Computer Science</option>
+            <option value="Physics">Physics</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="Mathematics">Mathematics</option>
+        </select>
+        <input
+        type="text"
+        class="form-input"
+        placeholder="Enter correct option"
+        ngModel name="optionc"
+        />
+        <input
+        type="text"
+        class="form-input"
+        placeholder="Enter Option1"
+        ngModel name="option1"
+        />
+        <input
+        type="text"
+        class="form-input"
+        placeholder="Enter Option2"
+        ngModel name="option2"
+        />
+        <button class="form-button">Add Question</button>
+    </form>
+</div>

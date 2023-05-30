@@ -1,0 +1,39 @@
+<div class="heading">
+  <h1>Chemistry</h1>
+</div>
+<div class="questions">
+  <h3 class="message-p">{{quizMessage}}</h3>
+  <form #myForm="ngForm" (submit)="submitForm(myForm)" action="" novalidate>
+      <!-- <form #myForm="ngForm" (ngSubmit)="isCorrected(myForm.value)" action=""> -->
+          <!-- <form action=""> -->
+              <div class="question-list" *ngFor="let item of category;">
+
+              <p>{{item.questions}}</p>
+              <!-- The problem was using similar options in similar places two times that is why radio buttons were jumbling. Try to have diffrent sort of options so that [value] = 'item.option1' is unique in every places if two such item.option1 is similar it is jumbling and cannot select the desired option -->
+              <div class="answers">
+                <input id="option1" name="name" [value]='item.option1' type="radio" [(ngModel)]="selectedValue">
+              <label for="option1">{{item.option1}}</label>
+              <input id="optionc" name="name" [value]='item.optionc' type="radio" [(ngModel)]="selectedValue">
+              <label #iscorrect id="optionc" for="optionc">{{item.optionc}}</label>
+              <input id="option2" name="name" [value]='item.option2' type="radio" [(ngModel)]="selectedValue">
+              <label for="option2">{{item.option2}}</label>
+              </div>
+
+
+              <div class="buttons">
+                <!-- <button type="submit" [disabled]="!form.valid">Submit</button> -->
+                <button class = "submit"(click)="getValue()">Submit</button>
+
+                <button class = "delete" (click)="deleteQuestion(item.id)">Delete</button>
+                <!-- In item.id it gives an error coz there is no such attribute we given in Quiz but we can now simply add it -->
+              </div>
+
+
+
+
+
+      </div>
+      </form>
+
+</div>
+<!-- {{selectedValue}} -->
